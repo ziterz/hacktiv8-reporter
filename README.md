@@ -25,7 +25,7 @@ $ npm i jest hacktiv8-reporter -D
 
 ## Usage:
 
-Configure Jest to process scoring results by adding the following entry to the Jest config (package.json):
+package.json
 
 ```json
 ...,
@@ -40,3 +40,22 @@ Configure Jest to process scoring results by adding the following entry to the J
 },
 ...
 ```
+
+__tests__/index.js
+
+```js
+...
+describe('describe title', () => {
+  test('test title (50)', () => { // increment 50 score when test is passed
+    ...
+  })
+  test('test title (50)', () => {
+    ...
+  })
+  test('test restriction rules (-30)', async () => { // for decrement 30 score when test is passed
+    ...
+  })
+})
+```
+
+
