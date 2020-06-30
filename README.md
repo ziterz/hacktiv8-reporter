@@ -25,7 +25,7 @@ $ npm i jest hacktiv8-reporter -D
 
 ## Usage:
 
-**``package.json``**
+**package.json**
 
 ```json
 ...,
@@ -41,7 +41,7 @@ $ npm i jest hacktiv8-reporter -D
 ...
 ```
 
-**``__tests__/index.js``**
+**__tests__/index.js**
 
 ```js
 ...
