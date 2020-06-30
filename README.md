@@ -25,7 +25,7 @@ $ npm i jest hacktiv8-reporter -D
 
 ## Usage:
 
-**package.json**
+**``package.json``**
 
 ```json
 ...,
