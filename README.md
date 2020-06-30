@@ -35,7 +35,7 @@ Configure Jest to process scoring results by adding the following entry to the J
 "jest": {
   "reporters": [
     "default",
-    "hacktiv8-reporters"
+    "hacktiv8-reporter"
   ]
 },
 ...
