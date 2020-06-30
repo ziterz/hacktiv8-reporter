@@ -20,7 +20,7 @@
 ## Installation:
 
 ```bash
-$ npm i hacktiv8-reporter -D
+$ npm i jest hacktiv8-reporter -D
 ```
 
 ## Usage:
