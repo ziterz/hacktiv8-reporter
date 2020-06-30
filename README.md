@@ -25,7 +25,7 @@ $ npm i jest hacktiv8-reporter -D
 
 ## Usage:
 
-**`package.json`**
+**package.json**
 
 ```json
 ...,
@@ -41,18 +41,18 @@ $ npm i jest hacktiv8-reporter -D
 ...
 ```
 
-**`__tests__/index.js`**
+**\_\_tests\_\_/index.js**
 
 ```js
 ...
 describe('describe title', () => {
-  test('test title (50)', () => { // add 50 score when test is passed
+  it('should check test title (50)', () => { // add 50 score when test is passed
     ...
   })
-  test('test title (50)', () => {
+  it('should check test title (50)', () => {
     ...
   })
-  test('test restriction rules (-30)', async () => { // reduce 30 score when test is passed
+  it('should check restriction rules (-30)', async () => { // reduce 30 score when test is passed
     ...
   })
 })
