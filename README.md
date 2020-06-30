@@ -46,13 +46,13 @@ $ npm i jest hacktiv8-reporter -D
 ```js
 ...
 describe('describe title', () => {
-  test('test title (50)', () => { // increment 50 score when test is passed
+  test('test title (50)', () => { // add 50 score when test is passed
     ...
   })
   test('test title (50)', () => {
     ...
   })
-  test('test restriction rules (-30)', async () => { // for decrement 30 score when test is passed
+  test('test restriction rules (-30)', async () => { // reduce 30 score when test is passed
     ...
   })
 })
