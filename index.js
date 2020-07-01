@@ -7,15 +7,14 @@ class ScoreReporter {
     let totalScore = 0;
     for (let $1testResult of results.testResults) {
       for (let $2testResult of $1testResult.testResults) {
-        totalScore += parseCorrectScenarioScore($2testResult);
-        totalScore += parseWrongScenarioScore($2testResult);
+        totalScore += parseScenarioScore($2testResult);
       }
     }
     console.log(`${colorScore(totalScore)}Score: ${totalScore}`, '\u001b[0m');
   }
 }
 
-const parseCorrectScenarioScore = test => {
+const parseScenarioScore = test => {
   if (test.status === 'passed') {
     let score;
     const matches = test.title.matchAll(/\((\d+\.?\d?)\)/g);
@@ -23,13 +22,7 @@ const parseCorrectScenarioScore = test => {
       score = Number(match[1]);
     }
     return score || 0;
-  } else {
-    return 0;
-  }
-}
-
-const parseWrongScenarioScore = test => {
-  if (test.status === 'failed') {
+  } else if (test.status === 'failed') {
     let score;
     const matches = test.title.matchAll(/\((\-?\d+)\)/g);
     for (let match of matches) {
