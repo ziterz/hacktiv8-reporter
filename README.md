@@ -10,7 +10,7 @@
   />
 </a>
 
-<p>Hacktiv8 Reporter is a library for grading in Hacktiv8 student's code</p>
+<p>Hacktiv8 Reporter is a library for grading of Hacktiv8 student codes</p>
 
 [Visit Us](https://hacktiv8.com/)
 
