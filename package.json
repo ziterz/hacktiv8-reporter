@@ -1,6 +1,6 @@
 {
   "name": "hacktiv8-reporter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hacktiv8 Reporter is a library for grading of Hacktiv8 student codes",
   "main": "index.js",
   "homepage": "https://github.com/ziterz/hacktiv8-reporter",
