@@ -28,7 +28,7 @@ const parseScenarioScore = test => {
     for (let match of matches) {
       score = Math.sign(Number(match[1])) === -1 ? Number(match[1]) : 0;
     }
-    return score || 0;
+    return score;
   } else {
     return 0;
   }
