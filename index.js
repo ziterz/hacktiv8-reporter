@@ -26,7 +26,7 @@ const parseScenarioScore = test => {
     let score;
     const matches = test.title.matchAll(/\((\-?\d+)\)/g);
     for (let match of matches) {
-      score = Number(match[1]);
+      score = Math.sign(Number(match[1])) === -1 ? Number(match[1]) : 0;
     }
     return score || 0;
   } else {
